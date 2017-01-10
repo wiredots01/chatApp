@@ -1,0 +1,8 @@
+meteor create chatapp --full
+cd chatapp
+meteor npm install
+nmp install react --save
+npm install react-dom --save
+
+configure eslitint
+configure editorconfig

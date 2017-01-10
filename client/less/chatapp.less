@@ -1,0 +1,211 @@
+* { font-family: 'Arial'; }
+body { background-color: #dedede; }
+.main-wrapper {
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+  background-color: #fff;
+  border: 1px solid #666;
+  border-radius: 5px;
+
+  .header-wrapper {
+    border-bottom: 1px solid #dedede;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    h1 {
+      display: inline;
+      a {
+        text-decoration: none;
+        color: #333;
+        &:hover {
+          color: #38ca73;
+        }
+      }
+    }
+    .login {
+      background-color: #666;
+      border: 1px solid #666;
+      border-radius: 10px;
+      color: #fff;
+      font-size: 15px;
+      margin: 0 0 0 50px;
+      padding: 10px 15px;
+      text-decoration: none;
+      display: inline-block;
+
+      &:hover { background-color: #777 }
+    }
+  }
+
+  .chat-wrapper {
+    margin: 20px 0 0 0;
+    text-align: left;
+    overflow-y: auto;
+    height: 500px;
+    padding: 0 15px;
+    p { margin: 0; }
+    span { color: #647787; font-size: 14px; display: inline-block; width: 100%; margin: 5px 0 10px 0;}
+
+    .callout {
+      background-color: #8ce80b;
+      color: #fff;
+      position: relative;
+      border-radius: 3px;
+      padding: 10px;
+
+      &:before {
+        content: "";
+        width: 0px;
+        height: 0px;
+        border: 0.8em solid transparent;
+        position: absolute;
+      }
+    }
+
+    .from-content {
+      .callout {
+        background-color: #38ca73;
+      }
+      margin: 0 0 0 40%;
+      div {
+        float: right;
+        max-width: 80%;
+        width: auto;
+        &:after {clear: both; }
+      }
+      span {
+        text-align: right;
+      }
+    }
+
+    .to-content {
+      margin: 0 40% 0 0;
+      div {
+        float: left;
+        max-width: 80%;
+        width: auto;
+        &:after {clear: both; }
+      }
+    }
+
+    .right{
+      &:before {
+        left: -20px;
+        top: 20%;
+        border-right: 10px solid #8ce80b;
+      }
+    }
+
+    .left {
+      &:before {
+        right: -20px;
+        top: 20%;
+        border-left: 10px solid #38ca73;
+      }
+    }
+
+  }
+
+  .message-wrapper {
+    border-top: 1px solid #dedede;
+    margin: 10px 0 10px 0;
+    padding: 10px 0 0 0;
+
+    input {
+      color: #647787;
+      background-color: #f5f8fa;
+      border: none;
+      border-radius: 7px;
+      font-size: 13px;
+      padding: 5px 10px;
+      width: 75%;
+      overflow: auto;
+      outline: none;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      resize: none;
+    }
+
+    button {
+      background-color: #666;
+      border: 1px solid #666;
+      border-radius: 10px;
+      color: #fff;
+      font-size: 15px;
+      padding: 10px 15px;
+      float: right;
+      width: auto;
+      outline: none;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      margin-right: 10px;
+    }
+
+    &:after {clear: both; }
+  }
+
+  .user-list {
+    text-align: center;
+    padding: 10px 0 0 0;
+    .user-box {
+      display: inline-block;
+      margin: 10px;
+      width: auto;
+      &:hover{
+        cursor: pointer;
+        span {
+          opacity: 0.8;
+        }
+      }
+
+      span {
+        background-color: #38ca73;
+        border-radius: 100%;
+        content: "";
+        display: block;
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+      }
+      a {
+        color: #777;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        font-size: 12px;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .at-form {
+    fieldset {
+      border: none;
+      .at-input {clear: both;}
+      input {
+        background-color: #dedede !important;
+        padding: 10px;
+        outline: none;
+        float: left;
+        width: 74%;
+        margin-bottom: 10px;
+        border: 1px solid #dedede;
+        border-radius: 5px;
+      }
+      label {
+        text-align: left;
+        display: inline-block;
+        width: 100px;
+        float: left;
+      }
+    }
+    .at-pwd-link {
+      p { clear: both; }
+    }
+    a {color: #38ca73; text-decoration: none; }
+  }
+}
+
+
