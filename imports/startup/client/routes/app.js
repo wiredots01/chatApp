@@ -22,7 +22,8 @@ FlowRouter.route('/', {
     mount(PageLayout, {
       content: <HomePage />
     })
-  }
+  },
+  triggersEnter: [ensureUserLoggedIn]
 })
 
 FlowRouter.route('/login', {

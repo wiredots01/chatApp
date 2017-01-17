@@ -5,11 +5,11 @@ import { FlowRouter } from 'meteor/kadira:flow-router'
 
 const Header = (props, context) => (
   <div className="header-wrapper">
-    <h1><a href={FlowRouter.path('usersList')}>Chat App</a></h1>
+    <div className="header-content"><h1><a href={FlowRouter.path('usersList')}>Chat app</a></h1></div>
     { Meteor.userId() ?
-      (<a href="#" className="login" onClick={() => AccountsTemplates.logout()}>Logout</a>) :
+      (<div className="login-btn"><a href="#" className="login" onClick={() => AccountsTemplates.logout()}>Log out</a></div>) :
       (
-        <a href={FlowRouter.path('login')} className="login" >Login</a>
+        ''
       )
     }
   </div>

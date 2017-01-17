@@ -48,7 +48,7 @@ AccountsTemplates.configure({
   },
   onLogoutHook() {
     Meteor.isClient
-    return FlowRouter.go('home')
+    return FlowRouter.go('login')
   },
   onSubmitHook(err, state) {
     if (!err) {

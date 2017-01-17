@@ -16,7 +16,7 @@ class UsersList extends React.Component {
         <div className="user-list">
           { users && users.map((user) => (
             <div className="user-box" key={user._id}>
-              <span></span>
+              <a href={FlowRouter.path('singleChat', { toId: user._id })}><span></span></a>
               <a href={FlowRouter.path('singleChat', { toId: user._id })}>{user.email}</a>
             </div>
           ))}

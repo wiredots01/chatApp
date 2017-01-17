@@ -37,7 +37,7 @@ export default class ChatForm extends React.Component {
     return (
       <div className="message-wrapper">
         <input ref={(input) => { this.textInput = input }} onKeyPress={this.handleKeyEnter} rows="1" placeholder="Start a new message" />
-        <button onClick={this.handleKeySubmit}>Send</button>
+        <button onClick={this.handleKeySubmit}>send</button>
       </div>
     )
   }
